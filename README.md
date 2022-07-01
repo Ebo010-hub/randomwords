@@ -1,6 +1,7 @@
 # RandomWords
-la tecnica del cut-up
-consiste en desestructurar un texto para volverlo a formar y la inventaron escritores surrealistas
+LA TECNICA DEL CUT-UP EN VERSION ELECTRONICA
+consiste la técnica cut-up o técnica de recortes, es un género o técnica literaria aleatoria en la cual un texto es recortado al azar y reordenado para crear un nuevo texto. 
+
 
 https://www.eldescomunal.com/ocio/cut-up-la-tecnica-de-recortes-musicales-y-artisticos/
 
