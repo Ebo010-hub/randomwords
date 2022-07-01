@@ -1,5 +1,4 @@
 #!/bin/python3
-
 # Python code to pick a random
 # word from a text file
 import random
@@ -18,5 +17,24 @@ def randonmwords():
         i += 1
 
 
+def randomtext():
+   choice ='0'
+   while choice =='0':
+    print("THIS IS THE TEXT")
+         
+    choice = input ("did you like the result? ")
+   
+    if choice == "yes":
+        break
+    elif choice == "no":
+        randonmwords()
+        randomtext() 
+
+
 if __name__ == '__main__':
+ 
    randonmwords()
+   randomtext()
+
+
+   
