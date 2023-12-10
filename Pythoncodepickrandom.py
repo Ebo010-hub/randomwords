@@ -1,40 +1,36 @@
 #!/bin/python3
-# Python code to pick a random
-# word from a text file
+
 import random
 
-
-def randonmwords():
+def randomwords():
     with open("./MyFile.txt", "r") as file:
         allText = file.read()
         words = list(map(str, allText.split()))
     
-    i = 1
-    while i < len(words):
-        words = list(map(str, allText.split()))
+    for _ in range(len(words)):
         wordlist = random.choice(words)
         print(wordlist, end=" ") 
-        i += 1
+
+def count_words():
+    with open("./MyFile.txt", "r") as file:
+        allText = file.read()
+        words = list(map(str, allText.split()))
+    return len(words)
 
 
 def randomtext():
-   choice ='0'
-   while choice =='0':
+   while True:
     print("THIS IS THE TEXT")
+    randomwords()
          
-    choice = input ("did you like the result? ")
+    choice = input ("\n¿Te gustó el resultado? ")
    
-    if choice == "yes":
+    if choice.lower() == "yes":
         break
-    elif choice == "no":
-        randonmwords()
-        randomtext() 
-
 
 if __name__ == '__main__':
- 
-   randonmwords()
-   randomtext()
-
+    randomtext()
+    print(f'El archivo tiene {count_words()} palabras.')
+    randomtext()
 
    
